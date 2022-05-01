@@ -17,9 +17,9 @@ Education
 
 Publication
 ======
-Wang, J., Wang, X.L., <strong>Yang, S.<strong/>, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021. Predicting the matching probability and ride/shared distance for each dynamic ridepooling order: A mathematical modeling approach. Transportation Research Part B 154, 125-146.
+Wang, J., Wang, X.L., <b>Yang, S.<b/>, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021. Predicting the matching probability and ride/shared distance for each dynamic ridepooling order: A mathematical modeling approach. Transportation Research Part B 154, 125-146.
 
 Working Paper
 ======
-* Routing for Connected Vehicles based on Deep Reinforcement Learning in Mixed Flow of Connected and Regular Vehicles with Enroute Information (with Liu, Y.)
+* Real time adaptive routing for connected vehicles based on information sharing: A multi-agent deep reinforcement learning framework (with Liu, Y.)
 * Designing a Forward-Looking Matching Policy in Dynamic Taxi-Pooling Services-A Systematic Approach (with Wang, X., Feng, Y.)
