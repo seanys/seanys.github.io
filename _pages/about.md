@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Department of Industrial System Engineering and Managment, National University of Singapore. Currently, I am working on traffic management, network design, and information dissemination in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
+I am Yang Shan(羊山), a PhD student in ISEM, National University of Singapore. Currently, I am working on traffic management, network design, and information dissemination in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
 
 Education
 ======
@@ -22,4 +22,4 @@ Wang, J., Wang, X.L., <b>Yang, S.<b/>, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021
 Working Paper
 ======
 * Real time adaptive routing for connected vehicles based on information sharing: A multi-agent deep reinforcement learning framework (with Liu, Y.)
-* Designing a Forward-Looking Matching Policy in Dynamic Taxi-Pooling Services-A Systematic Approach (with Wang, X., Feng, Y.)
+* Designing a Forward-Looking Matching Policy in Dynamic Taxi-Pooling Services: A Systematic Approach (with Wang, X.L., Feng, Y.)
