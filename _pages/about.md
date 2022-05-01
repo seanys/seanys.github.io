@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Biography"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a PhD student in Department of Industrial System Engineering and Managment, National University of Singapore. 
+I am a PhD student in Department of Industrial System Engineering and Managment, National University of Singapore. 
 
 Research Interests
 ======
-
+Connected Vehicle, Optimization, Data Driven Modelling
 
 Education
 ======
@@ -21,7 +21,7 @@ Education
 
 Publication
 ======
-
+Wang, J., Wang, X.L., <br>Yang, S.<br/>, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021. Predicting the matching probability and ride/shared distance for each dynamic ridepooling order: A mathematical modeling approach. Transportation Research Part B 154, 125-146.
 
 Working Paper
 ======
