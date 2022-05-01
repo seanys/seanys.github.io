@@ -12,8 +12,8 @@ I am a PhD student in Department of Industrial System Engineering and Managment,
 
 Education
 ======
-* B.S., Tongji University, 2021
-* Ph.D, National University of Singapore, 2025 (expected)
+* B.S., Management Science and Engineering, Tongji University, 2021
+* Ph.D, Industrial System and Engineering, National University of Singapore, 2025 (expected)
 
 Publication
 ======
