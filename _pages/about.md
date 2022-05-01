@@ -8,11 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Department of Industrial System Engineering and Managment, National University of Singapore. 
-
-Research Interests
-======
-Connected Vehicle, Optimization, Data Driven Modelling
+I am a PhD student in Department of Industrial System Engineering and Managment, National University of Singapore. Currently, I am working on traffic management, network design, and information dissemination in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
 
 Education
 ======
@@ -25,5 +21,5 @@ Wang, J., Wang, X.L., <br>Yang, S.<br/>, Yang, H., Zhang, X.N. and Gao, Z.Y., 20
 
 Working Paper
 ======
-
-
+* Routing for Connected Vehicles based on Deep Reinforcement Learning in Mixed Flow of Connected and Regular Vehicles with Enroute Information (with Liu, Y.)
+* Designing a Forward-Looking Matching Policy in Dynamic Taxi-Pooling Services-A Systematic Approach (with Wang, X., Feng, Y.)
