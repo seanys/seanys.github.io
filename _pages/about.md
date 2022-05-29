@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Yang Shan(羊山), a PhD student in ISEM, National University of Singapore. Currently, I am working on traffic management, network design, and information dissemination in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
+I am Yang Shan(羊山), a PhD student in ISEM, National University of Singapore. Currently, I am working on applying DRL to traffic management and information dissemination problem in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
 
 Education
 ======
