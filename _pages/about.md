@@ -20,6 +20,10 @@ Publication
 ======
 Wang, J., Wang, X.L., **Yang, S.**, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021. [Predicting the matching probability and ride/shared distance for each dynamic ridepooling order: A mathematical modeling approach](https://www.sciencedirect.com/science/article/pii/S0191261521001880). Transportation Research Part B 154, 125-146.
 
+Academic Services
+======
+Reviwer, The 22nd COTA International Conference of Transportation Professionals (CICTP 2022)
+
 Working Paper
 ======
 * Real time adaptive routing for connected vehicles based on information sharing: A multi-agent deep reinforcement learning framework (with Liu, Y.)
