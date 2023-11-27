@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Yang Shan(羊山), a PhD student in ISEM, National University of Singapore (NUS). Currently, I am working on applying DRL to traffic management and information dissemination problem in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
+I am Yang Shan(羊山), a PhD candidate in ISEM, National University of Singapore (NUS). Currently, I am working on applying DRL to congestion management in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
 
 Education
 ======
@@ -23,7 +23,7 @@ Wang, J., Wang, X.L., **Yang, S.**, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021. [
 Paper Under Review
 ======
 * **Yang S.**, Liu Y. Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach. Submitted to the *25th International Symposium on Transportation and Traffic Theory* (ISTTT25).
-* **Yang S.**, Feng Y., Wang W.L., Liu Y. Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service.
+* **Yang S.**, Feng Y., Wang W.L., Liu Y. Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service. 
 
 Working Paper
 ======
