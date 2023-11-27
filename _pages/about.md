@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Yang Shan(羊山), a PhD candidate in ISEM, National University of Singapore (NUS). Currently, I am working on applying DRL to congestion management in the mixed traffic flow environment with connected vehicles and regular vehicles. When I was studying at Tongji Unviversity, I also worked on some optimization problems in taxipooling and 2D irregular packing. 
+I am Yang Shan (羊山), a PhD candidate in ISEM at the National University of Singapore (NUS). Currently, I am working on applying Deep Reinforcement Learning (DRL) to congestion management in mixed traffic flow environments, focusing on both connected and regular vehicles. While studying at Tongji University, I also worked on optimization problems in taxi pooling and 2D irregular packing.
 
 Education
 ======
