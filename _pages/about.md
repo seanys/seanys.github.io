@@ -27,12 +27,12 @@ Conference Proceeding
 
 Paper Under Review
 ======
-* **Yang S.**, Feng Y., Wang W.L., Liu Y. Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service. 
+* **Yang S.**, Feng Y., Wang W.L., Liu Y. Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service, R&R at Manufacturing & Service Operations Management. 
+* **Yang S.**, Liu Y. Model-Supplementary Learning for Congestion Pricing: A Bias-Aware Natural Policy Gradient Approach. 
 
 Working Paper
 ======
 * **Yang S.**, Liu Y. Learn to Desseminate Personalized Information to Vehicles in Stochastic Traffic Networks. 
-* **Yang S.**, Liu Y. A New Paradigm for Learning the Optimal Tolling Policy. 
 
 Academic Services
 ======
