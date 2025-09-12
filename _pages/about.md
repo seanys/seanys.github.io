@@ -23,16 +23,16 @@ Publication
 
 Remark: Transportation Research Part B is a top-2 journal in transportation theory.
 
+Paper Under Review
+------
+* **Yang S.**, Feng Y., Wang W.L., Liu Y., Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service, **R&R at Manufacturing & Service Operations Management (utd24)**. 
+* **Yang S.**, Zhong L.H., Liu Y., Model-Supplementary Learning for Congestion Pricing: A Bias-Aware Natural Policy Gradient Approach, under review at ISTTT26.
+
 Conference Proceeding
 ------
 * **Yang S.**, Liu Y., 2024. [Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach](https://www.researchgate.net/publication/380759912_Markov_Game_for_CV_Joint_Adaptive_Routing_in_Stochastic_Traffic_Networks_A_Scalable_Learning_Approach). The 25nd International Symposium on Transportation and Traffic Theory
 
 Remark: ISTTT is the prestigious gathering for the world’s transportation and traffic theorists, regular acceptance rate: 10%.
-
-Paper Under Review
-------
-* **Yang S.**, Feng Y., Wang W.L., Liu Y., Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service, **R&R at Manufacturing & Service Operations Management (utd24)**. 
-* **Yang S.**, Zhong L.H., Liu Y., Model-Supplementary Learning for Congestion Pricing: A Bias-Aware Natural Policy Gradient Approach, under review at ISTTT26.
 
 Working Paper
 ------
