@@ -18,17 +18,21 @@ Education
 
 Publication
 ======
-* **Yang, S.** and Liu, Y., 2024. [Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach](https://www.sciencedirect.com/science/article/abs/pii/S0191261524001218), Transportation Research Part B: Methodological, 189, 102997. 
-* Wang, J., Wang, X.L., **Yang, S.**, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021. [Predicting the matching probability and ride/shared distance for each dynamic ridepooling order: A mathematical modeling approach](https://www.sciencedirect.com/science/article/pii/S0191261521001880). Transportation Research Part B 154, 125-146.
+* **Yang, S.** and Liu, Y., 2024. [Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach](https://www.sciencedirect.com/science/article/abs/pii/S0191261524001218), **Transportation Research Part B: Methodological**, 189, 102997. 
+* Wang, J., Wang, X.L., **Yang, S.**, Yang, H., Zhang, X.N. and Gao, Z.Y., 2021. [Predicting the matching probability and ride/shared distance for each dynamic ridepooling order: A mathematical modeling approach](https://www.sciencedirect.com/science/article/pii/S0191261521001880). **Transportation Research Part B** 154, 125-146.
+
+Remark: Transportation Research Part B is a top-2 journal in transportation theory.
 
 Conference Proceeding
 ======
-* **Yang S.**, Liu Y., 2024. [Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach](https://www.researchgate.net/publication/380759912_Markov_Game_for_CV_Joint_Adaptive_Routing_in_Stochastic_Traffic_Networks_A_Scalable_Learning_Approach). The 25nd International Symposium on Transportation and Traffic Theory (ISTTT is the prestigious gathering for the world’s transportation and traffic theorists, acceptance rate: 10%).
+* **Yang S.**, Liu Y., 2024. [Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach](https://www.researchgate.net/publication/380759912_Markov_Game_for_CV_Joint_Adaptive_Routing_in_Stochastic_Traffic_Networks_A_Scalable_Learning_Approach). The 25nd International Symposium on Transportation and Traffic Theory
+
+Remark: ISTTT is the prestigious gathering for the world’s transportation and traffic theorists, regular acceptance rate: 10%.
 
 Paper Under Review
 ======
-* **Yang S.**, Feng Y., Wang W.L., Liu Y. Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service, R&R at Manufacturing & Service Operations Management. 
-* **Yang S.**, Liu Y. Model-Supplementary Learning for Congestion Pricing: A Bias-Aware Natural Policy Gradient Approach. 
+* **Yang S.**, Feng Y., Wang W.L., Liu Y. Designing a Forward-Looking Probabilistic Matching Policy for Dynamic Ridepooling Service, **R&R at Manufacturing & Service Operations Management (utd24)**. 
+* **Yang S.**, Liu Y. Model-Supplementary Learning for Congestion Pricing: A Bias-Aware Natural Policy Gradient Approach, under review at ISTTT26.
 
 Working Paper
 ======
