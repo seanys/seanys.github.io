@@ -31,7 +31,8 @@ Paper Under Review
 Working Paper
 ======
 * **Yang S.**, Liu Y. Descent Guidance Functional for Reducing Variance in Large-Scale Cooperative MARL. 
-* **Yang S.**, Liu Y. Learn to Desseminate Personalized Information to Vehicles in Stochastic Traffic Networks. 
+* **Yang S.**, Wang X.L., Liu Y. Scalable decision-making for networked urban mobility via hierarchical action beliefs
+* **Yang S.**, Liu Y. Learn to Desseminate Personalized Information to Vehicles in Stochastic Traffic Networks.
 
 
 Conference Proceeding
