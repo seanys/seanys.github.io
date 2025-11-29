@@ -14,7 +14,7 @@ Education
 ======
 * B.S., Management Science and Engineering, Tongji University, 2021
 * B,S.(Minor Degree), Law, Fudan University, 2021
-* Ph.D, Industrial System and Engineering, National University of Singapore, 2025 (expected)
+* Ph.D, Industrial System and Engineering, National University of Singapore, April-2026 (expected)
 
 Publication
 ======
