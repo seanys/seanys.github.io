@@ -13,7 +13,7 @@ I am Yang Shan (羊山), a Research Fellow at the National University of Singapo
 Education
 ======
 * B.S., Management Science and Engineering, Tongji University, 2021
-* B,S.(Minor Degree), Law, Fudan University, 2021
+* B.S. (Minor Degree), Law, Fudan University, 2021
 * Ph.D, Industrial System and Engineering, National University of Singapore, 2026 (pending defense)
 
 Publication
@@ -32,17 +32,17 @@ Papers Under Review
 Working Papers
 ======
 * **Yang S.**, [Mean-Field Reinforcement Learning without Synchrony](https://arxiv.org/abs/2602.18026).
-* **Yang S.**, Liu Y. Learn to Desseminate Personalized Information to Vehicles in Stochastic Traffic Networks.
+* **Yang S.**, Liu Y. Learn to Disseminate Personalized Information to Vehicles in Stochastic Traffic Networks.
 
 ISTTT Proceeding
 ======
-* **Yang S.**, Liu Y., 2024. Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach. The 25nd International Symposium on Transportation and Traffic Theory.
+* **Yang S.**, Liu Y., 2024. Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach. The 25th International Symposium on Transportation and Traffic Theory.
 
 Remark: ISTTT is the prestigious gathering for the world’s transportation and traffic theorists, regular acceptance rate: 10%.
 
 Academic Services
 ======
-Reviwer, The 22nd COTA International Conference of Transportation Professionals (CICTP 2022)
+Reviewer, The 22nd COTA International Conference of Transportation Professionals (CICTP 2022)
 
 Honors
 ======
