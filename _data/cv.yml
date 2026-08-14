@@ -1,0 +1,51 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: YANG Shan
+    - name: Position
+      value: Research Fellow at the National University of Singapore
+    - name: Location
+      value: Singapore
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D, Industrial System and Engineering
+      institution: National University of Singapore
+      year: 2026
+    - title: B.S., Management Science and Engineering
+      institution: Tongji University
+      year: 2021
+    - title: B.S. (Minor Degree), Law
+      institution: Fudan University
+      year: 2021
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Fellow
+      institution: National University of Singapore
+      year: Present
+
+- title: Academic Services
+  type: list
+  contents:
+    - Reviewer, Transportation Research Part B: Methodological
+    - Reviewer, The 22nd COTA International Conference of Transportation Professionals (CICTP 2022)
+
+- title: Honors
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - Best Presenter Award at the 7th International Symposium on Multimodal Transport (ISMT 2025)
+    - year: 2022
+      items:
+        - NUS Research Scholarship
+    - year: 2020
+      items:
+        - National First Prize, China Contemporary Undergraduate Mathematical Contest in Modeling
+    - year: 2017
+      items:
+        - Second Prize in Shanghai, "Internet+" Innovation and Entrepreneurship Competition (Group Leader)

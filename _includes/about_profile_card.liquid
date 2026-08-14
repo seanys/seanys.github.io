@@ -1,0 +1,66 @@
+<div class="profile-card">
+  <a href="{{ '/' | relative_url }}" aria-label="{{ site.first_name }} {{ site.last_name }}">
+    <img
+      src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}"
+      class="profile-photo"
+      alt="{{ site.first_name }} {{ site.last_name }}"
+      loading="eager"
+    >
+  </a>
+
+  <h4 class="profile-name">{{ site.first_name }} {{ site.last_name }}</h4>
+  <p class="profile-title">{{ page.profile.title }}</p>
+  <p class="profile-institution">{{ page.profile.institution }}</p>
+
+  <div class="profile-links">
+    {% if site.data.socials.email %}
+      <a href="mailto:{{ site.data.socials.email }}" class="icon-link" title="Email" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    {% endif %}
+    {% if site.data.socials.github_username %}
+      <a
+        href="https://github.com/{{ site.data.socials.github_username }}"
+        class="icon-link"
+        title="GitHub"
+        aria-label="GitHub"
+        target="_blank"
+        rel="external nofollow noopener"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+    {% endif %}
+    {% if site.data.socials.scholar_userid %}
+      <a
+        href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}"
+        class="icon-link"
+        title="Google Scholar"
+        aria-label="Google Scholar"
+        target="_blank"
+        rel="external nofollow noopener"
+      >
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    {% endif %}
+    {% if site.data.socials.linkedin_username %}
+      <a
+        href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}"
+        class="icon-link"
+        title="LinkedIn"
+        aria-label="LinkedIn"
+        target="_blank"
+        rel="external nofollow noopener"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    {% endif %}
+  </div>
+
+  {% if page.profile.education %}
+    <ul class="profile-education">
+      {% for education in page.profile.education %}
+        <li>{{ education }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>

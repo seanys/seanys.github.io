@@ -1,0 +1,28 @@
+{% assign profile = site.data.repositories.github_user_details[include.username] %}
+{% assign profile_name = profile.name | default: include.username %}
+{% if profile.avatar_url %}
+  {% assign avatar_url = profile.avatar_url %}
+{% else %}
+  {% assign avatar_url = 'https://github.com/' | append: include.username | append: '.png?size=160' %}
+{% endif %}
+
+<div class="repo repo-user p-2">
+  <a class="repo-card repo-user-card" href="https://github.com/{{ include.username }}" aria-label="View {{ include.username }} on GitHub">
+    <img class="repo-avatar" alt="{{ profile_name }}" src="{{ avatar_url }}">
+    <span class="repo-user-content">
+      <span class="repo-title">{{ profile_name }}</span>
+      <span class="repo-username">@{{ include.username }}</span>
+      {% if profile.affiliation %}
+        <span class="repo-description">{{ profile.affiliation }}</span>
+      {% endif %}
+      <span class="repo-meta">
+        {% if profile.public_repos %}
+          <span><i class="fa-solid fa-book-bookmark" aria-hidden="true"></i> {{ profile.public_repos }} repositories</span>
+        {% endif %}
+        {% if profile.followers %}
+          <span><i class="fa-solid fa-user-group" aria-hidden="true"></i> {{ profile.followers }} followers</span>
+        {% endif %}
+      </span>
+    </span>
+  </a>
+</div>

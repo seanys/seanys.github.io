@@ -1,0 +1,22 @@
+github_users:
+  - seanys
+
+repo_description_lines_max: 2
+
+github_user_details:
+  seanys:
+    name: Yang, Shan
+    affiliation: National University of Singapore
+    avatar_url: https://avatars.githubusercontent.com/u/32950943?v=4
+    public_repos: 27
+    total_stars: 353
+    total_forks: 89
+    followers: 82
+
+github_repos:
+  - seanys/2D-Irregular-Packing-Algorithm
+  - seanys/CUMCM2020-Desert-Game
+  - seanys/Packing-Algorithm
+  - seanys/Predicting-the-Matching-Probability-and-Expected-Ride-shared-Distance-of-Enroute-Ridepooling-Orders
+  - seanys/Learn-to-Pack
+  - seanys/Aircraft-Maintenance-Brain

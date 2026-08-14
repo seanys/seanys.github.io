@@ -1,0 +1,32 @@
+{% assign lang = site.lang | split: '-' | first %}
+
+{% case lang %}
+  {% when 'pt' %}
+    {% assign lang = site.lang %}
+
+  {% when 'zh' %}
+    {% assign lang_last = site.lang | split: '-' | last %}
+    {% case lang_last %}
+      {% when 'cn', 'sg', 'my', 'hans' %}
+        {% assign lang = 'cn' %}
+      {% when 'tw', 'hk', 'mo', 'hant' %}
+        {% assign lang = 'zh-tw' %}
+    {% endcase %}
+{% endcase %}
+
+<div class="repo repo-stats p-2 text-center">
+  <a class="repo-stats-card" href="https://github.com/{{ include.username }}">
+    <img
+      class="only-light repo-stats-image"
+      alt="{{ include.username }}"
+      src="{{ site.external_services.github_readme_stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true&hide_title=true&hide_rank=true&hide_border=true&line_height=18&disable_animations=true"
+      onerror="this.closest('.repo').style.display='none'"
+    >
+    <img
+      class="only-dark repo-stats-image"
+      alt="{{ include.username }}"
+      src="{{ site.external_services.github_readme_stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true&hide_title=true&hide_rank=true&hide_border=true&line_height=18&disable_animations=true"
+      onerror="this.closest('.repo').style.display='none'"
+    >
+  </a>
+</div>
