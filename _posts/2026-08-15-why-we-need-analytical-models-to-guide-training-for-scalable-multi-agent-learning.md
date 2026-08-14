@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Do We Need Analytical Models to Guide Training for Scalable Multi-Agent Learning?"
-date: 2026-08-15
+date: 2026-08-14
 description: Using analytical models to provide structured guidance for reinforcement learning.
 tags:
   - Reinforcement Learning
