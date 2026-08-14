@@ -1006,7 +1006,7 @@ html[data-theme="dark"] .repo-user {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: #d6d6d6;
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -1050,6 +1050,38 @@ html[data-theme="dark"] .repo-user {
 
       .title {
         font-weight: bolder;
+      }
+
+      .publication-tutorial,
+      .publication-tutorial-mobile {
+        align-items: flex-start;
+        justify-content: flex-end;
+
+        a.tutorial.btn {
+          margin: 0;
+          padding: 0 0.75rem;
+          color: var(--global-hover-text-color);
+          background-color: var(--global-theme-color);
+          border: 1px solid var(--global-theme-color);
+          font-weight: 500;
+          white-space: nowrap;
+
+          &:hover {
+            color: var(--global-hover-text-color);
+            filter: brightness(0.9);
+            text-decoration: none;
+          }
+        }
+      }
+
+      .publication-tutorial {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      .publication-tutorial-mobile {
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
       }
 
       .author {
@@ -1096,6 +1128,18 @@ html[data-theme="dark"] .repo-user {
         }
         a.award.btn {
           border-color: var(--global-highlight-color);
+        }
+
+        a.code.btn {
+          color: var(--global-hover-text-color);
+          background-color: var(--global-theme-color);
+          border-color: var(--global-theme-color);
+          font-weight: 500;
+
+          &:hover {
+            color: var(--global-hover-text-color);
+            filter: brightness(0.9);
+          }
         }
       }
 

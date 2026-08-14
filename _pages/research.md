@@ -1,10 +1,10 @@
 ---
 layout: page
-title: research highlights
-nav_title: research
+title: Research Highlights
+nav_title: Research
 permalink: /research/
 description: Selected research highlights and ongoing work.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false

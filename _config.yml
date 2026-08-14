@@ -10,10 +10,7 @@ contact_note: >
   Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Welcome to visit YANG Shan's page.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+footer_text:
 keywords: reinforcement learning, optimization, multi-agent learning, transportation, academic website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: site_logo.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -61,7 +58,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -260,8 +257,8 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes", "2D irrgular Packing", "2D Irrgular Packing", "Algorithm"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: [] # these tags will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -289,8 +286,14 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
-  group_order: descending
+  group_by: tags
+  group_order: ascending
+  publication_tag_order:
+    - Scalable Learning
+    - Learning Theory
+    - System Modeling
+    - Transportation
+    - Complex Systems
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
@@ -320,6 +323,7 @@ filtered_bibtex_keywords:
     hal,
     html,
     inspirehep_id,
+    link,
     pdf,
     pmid,
     poster,
@@ -327,6 +331,7 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    tags,
     video,
     website,
   ]

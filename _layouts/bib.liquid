@@ -1,5 +1,11 @@
 ---
 ---
+{% assign tutorial_url = entry.tutorial %}
+{% if entry.tutorial %}
+  {% unless entry.tutorial contains '://' %}
+    {% assign tutorial_url = entry.tutorial | relative_url %}
+  {% endunless %}
+{% endif %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -48,7 +54,18 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title">
+      {% if entry.link %}
+        <a href="{{ entry.link }}">{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+    </div>
+    {% if entry.tutorial %}
+      <div class="publication-tutorial-mobile d-flex d-sm-none">
+        <a href="{{ tutorial_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-book-open"></i> Tutorial</a>
+      </div>
+    {% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -206,15 +223,14 @@
       {% if entry.hal %}
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
       {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      {% if entry.tags %}
+        {% assign publication_tags = entry.tags | split: ',' %}
+        {% for tag in publication_tags %}
+          <a class="btn btn-sm z-depth-0" role="button">{{ tag | strip }}</a>
+        {% endfor %}
       {% endif %}
-      {% if entry.html %}
-        {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-        {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
-        {% endif %}
+      {% if entry.code %}
+        <a href="{{ entry.code }}" class="code btn btn-sm z-depth-0" role="button"><i class="fa-brands fa-github"></i> Code</a>
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
@@ -237,9 +253,6 @@
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
-      {% endif %}
-      {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
@@ -376,15 +389,6 @@
       </div>
     {% endif %}
 
-    {% if entry.bibtex_show %}
-      <!-- Hidden bibtex block -->
-      <div class="bibtex hidden">
-        {% highlight bibtex %}
-        {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
-      </div>
-    {% endif %}
-
     {% if entry.video and site.enable_video_embedding %}
       <!-- Hidden video block -->
       <div class="abstract hidden">
@@ -392,4 +396,9 @@
       </div>
     {% endif %}
   </div>
+  {% if entry.tutorial %}
+    <div class="col-sm-2 publication-tutorial d-none d-sm-flex">
+      <a href="{{ tutorial_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-book-open"></i> Tutorial</a>
+    </div>
+  {% endif %}
 </div>

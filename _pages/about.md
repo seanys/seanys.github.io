@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Research Fellow at the National University of Singapore
 
@@ -11,8 +11,8 @@ profile:
   title: Research Fellow
   institution: National University of Singapore
   education:
-    - (2026) Ph.D., National University of Singapore
-    - (2021) B.S., Tongji University
+    - Ph.D., National University of Singapore
+    - B.S., Tongji University
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # social icons are included in the profile card
@@ -20,7 +20,7 @@ social: false # social icons are included in the profile card
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 1 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true

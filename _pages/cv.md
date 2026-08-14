@@ -1,11 +1,11 @@
 ---
 layout: cv
 permalink: /cv/
-title: cv
+title: CV
 nav: true
 nav_order: 5
 cv_pdf: # you can also use external links here
-description: Education, experience, academic service, and honors.
+# description: Education, experience, academic service, and honors.
 toc:
   sidebar: left
 ---
