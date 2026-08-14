@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-search-algorithm-and-optimization-algorithm-in-packing-problem",
+        },{id: "post-why-do-we-need-analytical-models-to-guide-training-for-scalable-multi-agent-learning",
+        
+          title: "Why Do We Need Analytical Models to Guide Training for Scalable Multi-Agent Learning?...",
+        
+        description: "Using analytical models to provide structured guidance for reinforcement learning.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/why-we-need-analytical-models-to-guide-training-for-scalable-multi-agent-learning/";
+          
+        },
+      },{id: "post-search-algorithm-and-optimization-algorithm-in-packing-problem",
         
           title: "Search algorithm and optimization algorithm in packing problem",
         
