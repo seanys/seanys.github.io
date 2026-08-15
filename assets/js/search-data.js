@@ -37,15 +37,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-why-do-we-need-analytical-models-to-guide-training-for-scalable-multi-agent-learning",
+        },{id: "post-why-do-we-need-analytical-models-to-guide-training-for-cooperative-multi-agent-learning",
         
-          title: "Why Do We Need Analytical Models to Guide Training for Scalable Multi-Agent Learning?...",
+          title: "Why Do We Need Analytical Models to Guide Training for Cooperative Multi-Agent Learning?...",
         
-        description: "Using analytical models to provide structured guidance for reinforcement learning.",
+        description: "In cooperative multi-agent reinforcement learning (CMARL), each agent learns from a shared return jointly determined by the stochastic actions of all agents, introducing cross-agent noise into its learning signal. As the number of agents grows, this noise increasingly dominates the learning signal, making direct scaling of CMARL nearly infeasible. This article presents how analytical models can provide direct signals for policy optimization in CMARL, thereby making CMARL scalable.",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2026/why-we-need-analytical-models-to-guide-training-for-scalable-multi-agent-learning/";
+          
+        },
+      },{id: "post-how-to-model-asynchronous-multi-agent-systems-and-design-reinforcement-learning-algorithms",
+        
+          title: "How to Model Asynchronous Multi-Agent Systems and Design Reinforcement Learning Algorithms",
+        
+        description: "In reality, most multi-agent systems operate asynchronously, such as cloud scheduling, traffic networks, and wireless spectrum markets, while existing multi-agent reinforcement learning methods generally assume simultaneous decision-making by all agents and model these systems as Markov games. This article will answer how asynchronous multi-agent systems can be modeled directly without delay-based approximations and how reinforcement learning algorithms can be designed for them.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/asynchronous-reinforcement-learning-and-modeling/";
           
         },
       },{id: "post-search-algorithm-and-optimization-algorithm-in-packing-problem",
