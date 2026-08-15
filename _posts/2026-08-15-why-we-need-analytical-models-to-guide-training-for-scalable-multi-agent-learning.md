@@ -6,7 +6,7 @@ description: In cooperative multi-agent reinforcement learning (CMARL), each age
 tags:
   - Reinforcement Learning
   - Model-Augmented Learning
-thumbnail: assets/img/DG-PG/01-cloud-task-dispatching.jpeg
+thumbnail: assets/img/DG-PG/07-gradient-variance-reduction.jpeg
 related_posts: false
 related_publications: true
 images:
