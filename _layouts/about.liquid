@@ -13,7 +13,14 @@ layout: default
             {{ site.title }}
           {% endif %}
         </h1>
-        <p class="desc">{{ page.subtitle }}</p>
+        <p class="desc about-subtitle">{{ page.subtitle }}</p>
+        {% if page.research_interests %}
+          <div class="about-research-interests" aria-label="Research interests">
+            {% for interest in page.research_interests %}
+              <span class="about-research-interest">{{ interest }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
       </header>
 
       <div class="about-introduction">{{ content }}</div>

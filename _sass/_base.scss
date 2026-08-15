@@ -210,6 +210,30 @@ ul.task-list input[type="checkbox"] {
     margin-bottom: 2rem;
   }
 
+  .about-subtitle {
+    font-style: italic;
+  }
+
+  .about-research-interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .about-research-interest {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--global-theme-color);
+    letter-spacing: 0.02em;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 999px;
+  }
+
   .about-introduction {
     line-height: 1.55;
   }

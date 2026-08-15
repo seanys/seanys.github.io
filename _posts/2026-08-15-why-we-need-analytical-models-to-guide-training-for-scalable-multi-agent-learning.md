@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Why Do We Need Analytical Models to Guide Training for Scalable Multi-Agent Learning?"
+title: "Why Do We Need Analytical Models to Guide Training for Cooperative Multi-Agent Learning?"
 date: 2026-08-14
-description: Using analytical models to provide structured guidance for reinforcement learning.
+description: In cooperative multi-agent reinforcement learning (CMARL), each agent learns from a shared return jointly determined by the stochastic actions of all agents, introducing cross-agent noise into its learning signal. As the number of agents grows, this noise increasingly dominates the learning signal, making direct scaling of CMARL nearly infeasible. This article presents how analytical models can provide direct signals for policy optimization in CMARL, thereby making CMARL scalable.
 tags:
   - Reinforcement Learning
   - Model-Augmented Learning
@@ -95,7 +95,19 @@ dgf = torch.dot(x - x_opt, local_influence)
 advantage = (1 - alpha) * advantage - alpha * dgf
 ```
 
-When the action is discrete, the local influence is directly given by the change in $\boldsymbol{x}$ caused by the selected action.
+When the action is discrete, the local influence is directly given by the change in $\boldsymbol{x}$ caused by the selected action. 
+
+In practice, the reference state $\tilde{\boldsymbol{x}}$ does not need to satisfy the descent-alignment condition strictly. The following are some representative applications:
+
+1. **Power generation.** The solution obtained from an economic dispatch problem can directly serve as the reference state $\tilde{\boldsymbol{x}}$, regardless of whether it is immediately attainable. Incorporating long-term generation dynamics may yield a better reference solution, but this is not necessary. The local influence $\boldsymbol{z}^i$ can then be obtained from the derivative of the generation state with respect to agent $i$'s generation-adjustment action.
+
+2. **Traffic information dissemination.** The system-optimal traffic flow obtained from dynamic traffic assignment can be directly used as the reference state $\tilde{\boldsymbol{x}}$. The local influence $\boldsymbol{z}^i$ is then the change in traffic flow induced by agent $i$'s information-dissemination action.
+
+3. **Communication network routing.** The optimal link-flow allocation obtained from a multicommodity-flow problem can be directly used as the reference state $\tilde{\boldsymbol{x}}$. The local influence $\boldsymbol{z}^i$ is then the change in link flows induced by agent $i$'s routing action.
+
+
+
+
 
 For implementation details, see the repository below.
 

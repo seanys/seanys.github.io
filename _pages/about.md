@@ -3,6 +3,10 @@ layout: about
 title: About
 permalink: /
 subtitle: Research Fellow at the National University of Singapore
+research_interests:
+  - Reinforcement Learning
+  - Game Theory
+  - Optimization
 
 profile:
   align: right
@@ -28,4 +32,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am YANG Shan (羊山), a Research Fellow at the National University of Singapore (NUS). I am dedicated to developing intelligent decision-making and modeling methods for complex systems, focusing on the integration of reinforcement learning and optimization theory to create interpretable and scalable policy learning frameworks.
+I am YANG Shan (羊山), a Research Fellow at the National University of Singapore (NUS). I am dedicated to developing intelligent decision-making and modeling methods for complex systems, focusing on the integration of reinforcement learning and optimization theory to create scalable, reliable, and interpretable learning methods.
