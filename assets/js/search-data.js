@@ -48,15 +48,26 @@ ninja.data = [{
             window.location.href = "/blog/2026/why-we-need-analytical-models-to-guide-training-for-scalable-multi-agent-learning/";
           
         },
-      },{id: "post-how-to-model-asynchronous-multi-agent-systems-and-design-reinforcement-learning-algorithms",
+      },{id: "post-how-to-model-asynchronous-multi-agent-systems-and-design-learning-algorithms",
         
-          title: "How to Model Asynchronous Multi-Agent Systems and Design Reinforcement Learning Algorithms",
+          title: "How to Model Asynchronous Multi-Agent Systems and Design Learning Algorithms?",
         
         description: "In reality, most multi-agent systems operate asynchronously, such as cloud scheduling, traffic networks, and wireless spectrum markets, while existing multi-agent reinforcement learning methods generally assume simultaneous decision-making by all agents and model these systems as Markov games. This article will answer how asynchronous multi-agent systems can be modeled directly without delay-based approximations and how reinforcement learning algorithms can be designed for them.",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2026/asynchronous-reinforcement-learning-and-modeling/";
+          
+        },
+      },{id: "post-how-to-routing-for-connected-vehicles",
+        
+          title: "How to Routing for Connected Vehicles?",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/routing-for-connected-vehicles/";
           
         },
       },{id: "post-search-algorithm-and-optimization-algorithm-in-packing-problem",
