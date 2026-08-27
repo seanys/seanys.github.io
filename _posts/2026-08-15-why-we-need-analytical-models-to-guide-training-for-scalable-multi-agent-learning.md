@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why Do We Need Analytical Models to Guide Training for Cooperative Multi-Agent Learning?"
+seo_title: "Descent-Guided Policy Gradient for Scalable Cooperative Multi-Agent Learning | Why Do We Need Analytical Models to Guide Training for Cooperative Multi-Agent Learning?"
 date: 2026-08-14
 description: In cooperative multi-agent reinforcement learning (CMARL), each agent learns from a shared return jointly determined by the stochastic actions of all agents, introducing cross-agent noise into its learning signal. As the number of agents grows, this noise increasingly dominates the learning signal, making direct scaling of CMARL nearly infeasible. This article presents how analytical models can provide direct signals for policy optimization in CMARL, thereby making CMARL scalable.
 tags:

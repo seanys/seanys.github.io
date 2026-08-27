@@ -31,6 +31,8 @@
   {% elsif page.title != 'blank' and page.url != '/' %}
     {% if page.title == null or page.title == '' %}
       {{ page.date | date: '%Y' }} | {{ title }}
+    {% elsif page.seo_title %}
+      {{ page.seo_title }}
     {% else %}
       {{ page.title }} | {{ title }}
     {% endif %}

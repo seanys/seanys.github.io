@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to Routing for Connected Vehicles?"
+seo_title: "Markov Game for CV Joint Adaptive Routing in Stochastic Traffic Networks: A Scalable Learning Approach | How to Routing for Connected Vehicles?"
 date: 2026-04-15
 description: ""
 tags:
