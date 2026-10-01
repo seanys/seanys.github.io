@@ -32,4 +32,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am YANG Shan (羊山), a Research Fellow at the National University of Singapore (NUS). I am dedicated to developing intelligent decision-making and modeling methods for complex systems, focusing on the integration of reinforcement learning and optimization theory to create scalable, reliable, and interpretable learning methods.
+I am YANG Shan (羊山), a Research Fellow at the National University of Singapore (NUS). I am dedicated to developing intelligent decision-making and modeling methods for complex systems, focusing on the integration of reinforcement learning and optimization theory to create scalable, reliable, and interpretable learning methods. I am particularly interested in complex systems in transportation and energy.
