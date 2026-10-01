@@ -14,9 +14,9 @@ github_user_details:
     followers: 82
 
 github_repos:
+  - seanys/Descent-Guided-Policy-Gradient-for-Scalable-Cooperative-Multi-Agent-Learning
   - seanys/2D-Irregular-Packing-Algorithm
   - seanys/CUMCM2020-Desert-Game
   - seanys/Packing-Algorithm
   - seanys/Predicting-the-Matching-Probability-and-Expected-Ride-shared-Distance-of-Enroute-Ridepooling-Orders
   - seanys/Learn-to-Pack
-  - seanys/Aircraft-Maintenance-Brain
