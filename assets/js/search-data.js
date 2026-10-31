@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-application",
+          title: "Application",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/application/";
+          },
         },{id: "post-why-do-we-need-analytical-models-to-guide-training-for-cooperative-multi-agent-learning",
         
           title: "Why Do We Need Analytical Models to Guide Training for Cooperative Multi-Agent Learning?...",
