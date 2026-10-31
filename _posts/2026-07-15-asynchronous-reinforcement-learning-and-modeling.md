@@ -19,13 +19,14 @@ images:
 Multi-agent reinforcement learning (MARL) is generally built on the basic assumption that agents make decisions simultaneously. Nash Q-learning, for example, requires all agents to jointly determine a Nash equilibrium in every stage game. Policy-based MARL adopts the same synchronous Markov-game formulation, where state transitions and learning updates are based on the joint action produced by all agents acting simultaneously.
 
 However, in reality, decisions in most complex systems are made asynchronously.
+
 1. **Large-scale computing systems**: Jobs arrive and computing resources become available at different times, so scheduling and resource-allocation decisions are made in response to different events.
 2. **Transportation systems**: Vehicle and passenger arrivals, movements, and departures occur continuously, and each agent makes mobility decisions at its own decision time.
 3. **Communication systems**: Devices initiate transmissions at different times according to their local data arrivals, resulting in asynchronous channel-access and resource-allocation decisions.
 
 {% include figure.liquid path="assets/img/Asynchronous-RL/01-asynchronous-multi-agent-system.png" class="img-fluid rounded z-depth-1 d-block mx-auto" width="75%" zoomable=true alt="Asynchronous multi-agent reinforcement learning system" %}
 
-Existing methods mainly accommodate asynchronous decision-making by converting it into a synchronous decision process. For example, delay-based methods map different action-completion times to delays on a shared time grid; macro-action methods encapsulate actions of different durations while retaining synchronized primitive-action transitions; and padding-based methods assign no-op or repeated actions to inactive agents so that a complete joint action is available at every step. 
+Existing methods mainly accommodate asynchronous decision-making by converting it into a synchronous decision process. For example, delay-based methods map different action-completion times to delays on a shared time grid; macro-action methods encapsulate actions of different durations while retaining synchronized primitive-action transitions; and padding-based methods assign no-op or repeated actions to inactive agents so that a complete joint action is available at every step.
 
 > However, these treatments are compromises made to retain the synchronous underlying model. Even when agents make decisions asynchronously, these methods must still convert their interactions into synchronized joint transitions. Without this conversion, the validity of the learning updates and the corresponding convergence guarantees cannot be established.
 
@@ -73,7 +74,7 @@ $$
 V^{\pi^{\ast}}(o',\mu_t^{\ast})\geq V^\pi(o',\mu_t^{\ast})\quad \forall\,\pi,\,o',\,t.
 $$
 
-> TMF is applicable when agents are `homogeneous`, `exchangeable` and their interactions exhibit some form of `congestion effect`. Representative examples include anonymous resource-selection games, parallel-server load balancing, routing among homogeneous vehicles, and large-scale queueing systems. 
+> TMF is applicable when agents are `homogeneous`, `exchangeable` and their interactions exhibit some form of `congestion effect`. Representative examples include anonymous resource-selection games, parallel-server load balancing, routing among homogeneous vehicles, and large-scale queueing systems.
 
 > The `existence` and `uniqueness` of the TMF equilibrium are guaranteed by Assumption 4.3, discrete monotonicity, which is more general than assuming an explicit congestion structure. Under an additional condition linking the interaction coupling and batch size, the finite-agent system admits a `bounded approximation error` relative to its mean-field counterpart.
 
@@ -82,9 +83,6 @@ $$
 The TMF Policy Gradient (TMF-PG) algorithm is illustrated below. It allows agents to make decisions asynchronously, with the joint action replaced by the population distribution $\hat{\mu}_t$. We prove that `TMF-PG converges to the unique TMF equilibrium` established above when sufficient policy-gradient updates are performed at each iteration.
 
 {% include figure.liquid path="assets/img/Asynchronous-RL/03-tmf-reinforcement-learning.png" class="img-fluid rounded z-depth-1 d-block mx-auto" width="100%" zoomable=true alt="TMF reinforcement learning algorithm" %}
-
-
-
 
 ---
 {% nocite yang_mean_field %}

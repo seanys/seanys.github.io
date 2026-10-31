@@ -15,7 +15,8 @@ images:
 ---
 
 # Background
-Cooperative multi-agent reinforcement learning (CMARL) refers to settings in which agents share a common objective and must coordinate their actions, such as cloud scheduling and power-system operation. The training difficulty of cooperative MARL grows rapidly with the number of agents $N$, stemming from multi-agent credit assignment: when all agents jointly contribute to the shared objective, no individual agent's contribution can be cleanly identified. 
+
+Cooperative multi-agent reinforcement learning (CMARL) refers to settings in which agents share a common objective and must coordinate their actions, such as cloud scheduling and power-system operation. The training difficulty of cooperative MARL grows rapidly with the number of agents $N$, stemming from multi-agent credit assignment: when all agents jointly contribute to the shared objective, no individual agent's contribution can be cleanly identified.
 
 Taking QMIX as an example, all agents are trained using the same team reward, while the learning algorithm must identify each agent's individual contribution from this shared signal, causing the noise to scale as $\Theta(N)$.
 
@@ -24,6 +25,7 @@ Taking QMIX as an example, all agents are trained using the same team reward, wh
 As the number of agents increases, the $\Theta(N)$-scaling noise increasingly dominates the useful gradient signal, making reliable policy updates progressively more difficult. Model-based counterfactual methods, for example, rely on accurately modeling how alternative individual actions affect system outcomes, which requires an accurate dynamics model that may be unavailable in practice and costly to obtain.
 
 # Motivation and Proposed Approach
+
 **Fortunately, many cooperative engineering systems admit differentiable analytical models that prescribe efficient system states. For example, queueing models characterize how workloads should be balanced across servers in cloud scheduling, while power-flow equations characterize how generation should meet demand subject to network constraints in power systems. These prescriptions remain system-level descriptions and do not directly yield local decision rules for individual agents.**
 <div class="w-75 mx-auto">
     <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
@@ -49,9 +51,9 @@ $$
 
 where $\boldsymbol{z}_t^i\triangleq\frac{\partial\boldsymbol{x}_t}{\partial a_t^i}$ represents the local influence of agent $i$ on the system state.
 
-
 {% include figure.liquid path="assets/img/DG-PG/07-gradient-variance-reduction.jpeg" class="img-fluid rounded z-depth-1 d-block mx-auto" width="75%" zoomable=true alt="" %}
 
+<!-- prettier-ignore -->
 Taking cloud scheduling as an example, $\boldsymbol{x}_t-\tilde{\boldsymbol{x}}_t$ measures how the current workload of each server deviates from the load-balanced state, while $\boldsymbol{z}_t^i\triangleq\frac{\partial\boldsymbol{x}_t}{\partial a_t^i}$ directly indicates how agent $i$'s action changes the workload of each server. **Consequently, $\hat{g}_{\mathcal G,t}^i$ identifies whether the action moves the system toward or away from load balance, providing a low-variance guidance signal for policy training.**
 
 {% include figure.liquid path="assets/img/DG-PG/06-deviation-and-local-influence.jpeg" class="img-fluid rounded z-depth-1 d-block mx-auto" width="75%" zoomable=true alt="Deviation from the analytical reference and local action influence" %}
@@ -68,8 +70,7 @@ $$
 \alpha g_{\mathcal G,t}^i,
 $$
 
-where $\alpha\in[0,1]$ controls the balance between the original PPO advantage and the analytical guidance. 
-
+where $\alpha\in[0,1]$ controls the balance between the original PPO advantage and the analytical guidance.
 
 Computing $g_{\mathcal G,t}^i$ is also straightforward. Taking cloud scheduling as an example, suppose agent $i$ assigns a task to server $a_t^i$, where each task requires both CPU and memory. After computing the target CPU and memory utilizations $\tilde{x}\_{\mathrm{CPU},t}^n$ and $\tilde{x}\_{\mathrm{MEM},t}^n$ for every server $n$, the guidance term is
 
@@ -96,7 +97,7 @@ dgf = torch.dot(x - x_opt, local_influence)
 advantage = (1 - alpha) * advantage - alpha * dgf
 ```
 
-When the action is discrete, the local influence is directly given by the change in $\boldsymbol{x}$ caused by the selected action. 
+When the action is discrete, the local influence is directly given by the change in $\boldsymbol{x}$ caused by the selected action.
 
 In practice, the reference state $\tilde{\boldsymbol{x}}$ does not need to satisfy the descent-alignment condition strictly. The following are some representative applications:
 
@@ -106,15 +107,11 @@ In practice, the reference state $\tilde{\boldsymbol{x}}$ does not need to satis
 
 3. **Communication network routing.** The optimal link-flow allocation obtained from a multicommodity-flow problem can be directly used as the reference state $\tilde{\boldsymbol{x}}$. The local influence $\boldsymbol{z}^i$ is then the change in link flows induced by agent $i$'s routing action.
 
-
-
-
-
 For implementation details, see the repository below.
 
 <div class="repositories d-flex justify-content-center">
   {% include repository/repo.liquid repository="seanys/Descent-Guided-Policy-Gradient-for-Scalable-Cooperative-Multi-Agent-Learning" %}
 </div>
 
---- 
+---
 {% nocite yang_descent_guided %}

@@ -16,7 +16,7 @@ images:
 
 Traffic events such as accidents, roadworks, and adverse weather make travel times in road networks inherently stochastic. These events are also major sources of congestion. Delayed route adjustment causes incident-induced queues to propagate upstream and spill back into adjacent links. While the concentration of diverted traffic on a single alternative route may transfer congestion across the network, giving rise to the flash crowd effect.
 
-With advances in communication technologies, connected vehicles (CVs) can access real-time traffic information and exchange their intended route choices with other vehicles. These capabilities enable real-time joint adaptive routing in stochastic road networks, accommodating individual routing preferences while mitigating congestion caused by collective overreaction. 
+With advances in communication technologies, connected vehicles (CVs) can access real-time traffic information and exchange their intended route choices with other vehicles. These capabilities enable real-time joint adaptive routing in stochastic road networks, accommodating individual routing preferences while mitigating congestion caused by collective overreaction.
 
 Coordinating the routing decisions of all CVs, however, remains challenging. Each vehicle must simultaneously account for the actions of all other vehicles, whose destinations and routing preferences differ. Moreover, since vehicles affect one another whenever their routes overlap, these decisions are also coupled through the road-network topology.
 
@@ -26,9 +26,9 @@ We therefore begin by proposing a Markov Routing Game (MRG), as illustrated belo
 
 {% include figure.liquid path="assets/img/MRG/learning-process.png" class="img-fluid rounded z-depth-1 d-block mx-auto" width="75%" zoomable=true alt="Routing-policy learning process" %}
 
-In our MRG, all vehicles make decisions simultaneously every $\Delta t$, independently of whether they are approaching an intersection. An action represents the vehicle’s expected trajectory during the next $\Delta t$. For instance, $a_t^n=[0,0.4,0,0.6,\ldots]$ means that vehicle $n$ is expected to spend 40% of this period on the 2nd link and 60% on the 4th link, with all entries of the action vector summing to one. The action space remains enumerable and can be expressed using the road-network graph, although the feasible trajectory choices depend on the vehicle’s current observation. 
+In our MRG, all vehicles make decisions simultaneously every $\Delta t$, independently of whether they are approaching an intersection. An action represents the vehicle’s expected trajectory during the next $\Delta t$. For instance, $a_t^n=[0,0.4,0,0.6,\ldots]$ means that vehicle $n$ is expected to spend 40% of this period on the 2nd link and 60% on the 4th link, with all entries of the action vector summing to one. The action space remains enumerable and can be expressed using the road-network graph, although the feasible trajectory choices depend on the vehicle’s current observation.
 
-The figure below presents an example of a vehicle observation, where $[0.5,8,1.2,1]$ represents its relative position, speed, acceleration, and vehicle type, respectively. 
+The figure below presents an example of a vehicle observation, where $[0.5,8,1.2,1]$ represents its relative position, speed, acceleration, and vehicle type, respectively.
 
 {% include figure.liquid path="assets/img/MRG/mean-observation.png" class="img-fluid rounded z-depth-1 d-block mx-auto" zoomable=true  width="50%"  alt="Mean-observation representation for connected-vehicle routing" %}
 
