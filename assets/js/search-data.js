@@ -37,6 +37,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/application/";
           },
+        },{id: "nav-ppl",
+          title: "PPL",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ppl/";
+          },
         },{id: "post-why-do-we-need-analytical-models-to-guide-training-for-cooperative-multi-agent-learning",
         
           title: "Why Do We Need Analytical Models to Guide Training for Cooperative Multi-Agent Learning?...",
@@ -88,6 +95,12 @@ ninja.data = [{
               window.location.href = "/books/the_godfather/";
             },},{id: "news-thrilled-to-share-that-i-successfully-defended-my-ph-d-thesis-at-the-national-university-of-singapore",
           title: 'Thrilled to share that I successfully defended my Ph.D. thesis at the National...',
+          description: "",
+          section: "News",},{id: "news-launched-decision-for-complex-systems-interactive-visualizations-of-ai-decision-making-in-large-systems",
+          title: 'Launched Decision for Complex Systems, interactive visualizations of AI decision-making in large systems....',
+          description: "",
+          section: "News",},{id: "news-launched-prescriptive-policy-learning-interactive-visualizations-and-tutorials-with-training-code",
+          title: 'Launched Prescriptive Policy Learning, interactive visualizations and tutorials with training code.',
           description: "",
           section: "News",},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
