@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/ppl/";
           },
-        },{id: "post-why-do-we-need-analytical-models-to-guide-training-for-cooperative-multi-agent-learning",
+        },{id: "post-prescriptive-policy-learning-interactive-visualizations-and-tutorials",
+        
+          title: 'Prescriptive Policy Learning: Interactive Visualizations and Tutorials <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Interactive visualizations and tutorials on teaching agents principles of behavior directly, with the learned behavior, the principles and the training code of every example.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://seanys.github.io/ppl_examples/", "_blank");
+          
+        },
+      },{id: "post-decision-for-complex-systems-interactive-visualizations-of-ai-decision-making",
+        
+          title: 'Decision for Complex Systems: Interactive Visualizations of AI Decision-Making <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Interactive visualizations of AI agents making real-time decisions in large systems, including power generation control, cloud job scheduling, distribution voltage control and robotaxi fleet rebalancing.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://ai4systems.org/", "_blank");
+          
+        },
+      },{id: "post-why-do-we-need-analytical-models-to-guide-training-for-cooperative-multi-agent-learning",
         
           title: "Why Do We Need Analytical Models to Guide Training for Cooperative Multi-Agent Learning?...",
         
