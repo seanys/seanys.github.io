@@ -1079,6 +1079,8 @@ html[data-theme="dark"] .repo-user {
       .publication-tutorial-mobile {
         align-items: flex-start;
         justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 0.25rem;
 
         a.tutorial.btn {
           margin: 0;

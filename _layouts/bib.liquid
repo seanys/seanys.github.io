@@ -6,6 +6,12 @@
     {% assign tutorial_url = entry.tutorial | relative_url %}
   {% endunless %}
 {% endif %}
+{% assign website_url = entry.website %}
+{% if entry.website %}
+  {% unless entry.website contains '://' %}
+    {% assign website_url = entry.website | relative_url %}
+  {% endunless %}
+{% endif %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -61,9 +67,14 @@
         {{ entry.title }}
       {% endif %}
     </div>
-    {% if entry.tutorial %}
+    {% if entry.tutorial or entry.website %}
       <div class="publication-tutorial-mobile d-flex d-sm-none">
-        <a href="{{ tutorial_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-book-open"></i> Tutorial</a>
+        {% if entry.website %}
+          <a href="{{ website_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-globe"></i> Website</a>
+        {% endif %}
+        {% if entry.tutorial %}
+          <a href="{{ tutorial_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-book-open"></i> Tutorial</a>
+        {% endif %}
       </div>
     {% endif %}
     <!-- Author -->
@@ -268,9 +279,6 @@
           <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
         {% endif %}
       {% endif %}
-      {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
-      {% endif %}
     </div>
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
@@ -396,9 +404,14 @@
       </div>
     {% endif %}
   </div>
-  {% if entry.tutorial %}
+  {% if entry.tutorial or entry.website %}
     <div class="col-sm-2 publication-tutorial d-none d-sm-flex">
-      <a href="{{ tutorial_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-book-open"></i> Tutorial</a>
+      {% if entry.website %}
+        <a href="{{ website_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-globe"></i> Website</a>
+      {% endif %}
+      {% if entry.tutorial %}
+        <a href="{{ tutorial_url }}" class="tutorial btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-book-open"></i> Tutorial</a>
+      {% endif %}
     </div>
   {% endif %}
 </div>
